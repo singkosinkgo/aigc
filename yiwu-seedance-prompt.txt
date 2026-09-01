@@ -1,0 +1,17 @@
+Seedance 2.0 omni reference video. Output 16:9, 720p, 15 seconds, generate synchronized sound. Use the two reference images to preserve the futuristic exterior architecture, aerial scale, glass towers, oval plaza and Yiwu Global Digital Trade Center visual identity. Cinematic commercial style, photorealistic, high-tech blue digital light matrix, smooth transitions, fast but readable camera motion.
+
+Strict rule: do not generate any subtitles, captions, UI text overlays, lower thirds, burned-in words, or title cards. Shop signs may be environmental only if naturally present; no added text.
+
+Audio design: crisp digital particle-stream sound through the opening and transitions; at the ending, shift into a grand, open, rising tone. Add clean Chinese voiceover and one short Hindi buyer line with an English machine translation as audio only, never as on-screen subtitles.
+
+Shot 1, 0-3s, hyper-lapse rush: start from an aerial view of Yiwu Global Digital Trade Center, futuristic glass facade and landmark complex matching the reference images. The camera dives through the glass curtain wall into the interior. A full-screen blue digital light matrix flashes past, instantly switching to a busy, modern digital trade center interior. Voiceover: 在义乌，未来的触角，正延伸至每一个角落。
+
+Shot 2, 3-6s, bullet-time orbit and freeze: orbit quickly around a futuristic smart device store entrance inside the trade center. Bright technology lighting, dense foot traffic, many Chinese and international merchants stop and look into the store. Voiceover: 数字化的浪潮，在这里具象化。
+
+Shot 3, 6-9s, macro progressive close-up: rapidly focus into a hand holding a sleek AI translator device. The device has refined industrial design, glass and metal texture, blue reflections, world flag icons and loading progress flowing on the screen as animated abstract graphics. Sound effect: a crisp tech boot beep.
+
+Shot 4, 9-13s, reverse-shot quick cuts and local details: fast cuts between the mouth of an Indian buyer speaking Hindi, the translator screen glowing, and a smiling Yiwu merchant nodding. The Indian buyer tests repeatedly with focused eyes. In seconds, the device speaks accurate Chinese and English audio. Indian buyer line in Hindi audio: 这个细节能定制吗？ Translator voice audio: Can this detail be customized?
+
+Shot 5, 13-15s, spin transition and zoom out finale: rotate 180 degrees around the translator as the background morphs within half a second from the Yiwu shop to a vibrant European commercial street and a modern ASEAN city. Local customers use the same translator in energetic business communication. Voiceover: 从义乌出发，风靡欧洲与东盟。 Then zoom rapidly out from the translator screen to high altitude; screen light becomes countless data lines connecting the globe into a global trade network. Music peaks and stops cleanly.
+
+Negative prompt: subtitles, captions, title cards, visible generated text, watermark, logo overlays, blurry faces, distorted hands, unreadable product, low resolution, jitter, flicker, extra limbs, deformed architecture.

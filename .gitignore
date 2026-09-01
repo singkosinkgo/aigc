@@ -1,0 +1,40 @@
+# macOS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Secrets and environment-specific configuration
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node / build caches
+node_modules/
+dist/
+.npm-cache/
+*.tsbuildinfo
+frontend/vite.config.js
+frontend/vite.config.d.ts
+
+# Runtime data may contain API keys, users and generated work metadata
+backend/data/
+backend/data.backup-*/
+backend/uploads/
+
+# Logs and local processes
+*.log
+*.pid
+
+# One-off local scripts and generated media
+skills/
+yiwu-seedance-submit.sh
+yiwu-seedance-result.json
+yiwu-seedance-output.mp4

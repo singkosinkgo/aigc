@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #2F80FF;
+  --primary-light: #7DBBFF;
+  --secondary: #2F80FF;
+  --accent: #7A6CFF;
+  --text-primary: #17233D;
+  --text-main: #17233D;
+  --text-secondary: #6B7A99;
+  --text-sub: #6B7A99;
+  --border: rgba(126, 170, 255, 0.22);
+  --border-soft: rgba(126, 170, 255, 0.22);
+  --bg-page: #F3F8FF;
+  --bg-card: rgba(255, 255, 255, 0.72);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 1180px;
+  background:
+    radial-gradient(circle at 8% 6%, rgba(47, 128, 255, 0.12), transparent 28%),
+    linear-gradient(180deg, #F8FBFF 0%, #EEF6FF 100%);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+textarea,
+select {
+  background: rgba(255, 255, 255, 0.82);
+  border-color: rgba(126, 170, 255, 0.25);
+  border-radius: 14px;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(47, 128, 255, 0.08);
+}
+
+.glass-panel {
+  border: 1px solid rgba(126, 170, 255, 0.18);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.74);
+  box-shadow: 0 18px 48px rgba(47, 128, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.card {
+  border: 1px solid rgba(126, 170, 255, 0.18);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.74);
+  box-shadow: 0 18px 48px rgba(47, 128, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.main-panel {
+  border: 1px solid rgba(126, 170, 255, 0.18);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.74);
+  box-shadow: 0 18px 48px rgba(47, 128, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.upload-box {
+  border: 1px solid rgba(126, 170, 255, 0.25);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.gradient-button {
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    #2F80FF 0%,
+    #7A6CFF 100%
+  );
+  box-shadow: 0 12px 28px rgba(47, 128, 255, 0.22);
+  color: #FFFFFF;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+}
+
+.gradient-button:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 34px rgba(47, 128, 255, 0.28);
+}
+
+.secondary-button {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  box-shadow: none;
+}
+
+.option-card {
+  border: 1px solid rgba(126, 170, 255, 0.22);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.option-card-selected {
+  border: 1px solid rgba(47, 128, 255, 0.42);
+  border-radius: 10px;
+  background: rgba(47, 128, 255, 0.08);
+  box-shadow: none;
+}
+
+.sidebar-menu-card {
+  border: 1px solid rgba(126, 170, 255, 0.12);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.54);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.sidebar-menu-card-selected {
+  border: 1px solid rgba(47, 128, 255, 0.14);
+  border-radius: 18px;
+  background: rgba(47, 128, 255, 0.08);
+  box-shadow: 0 10px 28px rgba(47, 128, 255, 0.08);
+}
+
+@keyframes crystal-float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.02);
+  }
+}
+
+@keyframes orbit-spin {
+  from {
+    transform: rotate(var(--orbit-angle, 0deg));
+  }
+  to {
+    transform: rotate(calc(var(--orbit-angle, 0deg) + 360deg));
+  }
+}
+
+@keyframes orbit-counter-spin {
+  from {
+    transform: rotate(var(--orbit-angle, 0deg));
+  }
+  to {
+    transform: rotate(calc(var(--orbit-angle, 0deg) - 360deg));
+  }
+}
+
+@keyframes shimmer-slide {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(240%);
+  }
+}
+
+.crystal-float {
+  animation: crystal-float 4.2s ease-in-out infinite;
+}
+
+.orbit-spin {
+  animation: orbit-spin 8s linear infinite;
+}
+
+.orbit-counter-spin {
+  animation: orbit-counter-spin 10s linear infinite;
+}
+
+.shimmer-slide {
+  animation: shimmer-slide 2.4s ease-in-out infinite;
+}
